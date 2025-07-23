@@ -12,6 +12,7 @@ html {
 body {
   font-family: sans-serif;
   background-color: rgb(237, 237, 237);
+  position: relative;
 }
 
 header {
@@ -103,4 +104,54 @@ li {
 li:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100rem;
+}
+
+.overlay {
+  background-color: rgb(245, 245, 245);
+  padding: 27rem 50rem 27rem 50rem;
+  border-radius: 20rem;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-h1 {
+  font-size: 25rem;
+  color: #333639;
+  margin-bottom: 5rem;
+}
+
+.modal-p {
+  font-size: 23rem;
+  color: #333639;
+  margin-bottom: 10rem;
+}
+
+.play-btn {
+  color: white;
+  font-size: 16rem;
+  font-weight: 300;
+  background-color: #222425;
+  border: none;
+  border-radius: 15rem;
+  padding: 7rem 16rem 7rem 16rem;
 }
